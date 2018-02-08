@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>Here are some users list</h2>
+
+<table>
+
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>email</td>
+        <td>phone</td>
+      </tr>
+      <tr *ngFor=" let user of users">
+          <td>
+            {{user.id}}
+          </td>
+          <td>
+            {{user.name}}
+          </td>
+          <td>
+            {{user.email}}
+          </td>
+          <td>
+            {{user.phone}}
+          </td>
+          <br>
+          <br>
+        </tr>
+</table>
